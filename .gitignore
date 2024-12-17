@@ -1,0 +1,5 @@
+# my IDE
+.idea
+
+#that's just the name of my venv
+venv/
