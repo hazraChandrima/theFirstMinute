@@ -31,7 +31,6 @@ This script automates sending a birthday wish to someone via the **WhatsApp Desk
 - A Windows machine (updates for Linux coming soon)
 - Python installed on your system (3.8 or higher recommended).
 - WhatsApp Desktop App installed on your Windows machine.
-- Basic understanding of Task Scheduler on Windows.
 - A comfortable sleep schedule
 
 
