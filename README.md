@@ -42,7 +42,7 @@ Ensure you have Python installed on your system. The script uses the following l
 - **pyautogui** (for desktop automation)
 - **time** (for time manipulation and delays)
 
----
+<br/>
 
 
 ## 🛠️ Setup and Installation
