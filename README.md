@@ -23,7 +23,6 @@ We all know it's a pain in the butt to stay awake just for that, especially for 
 
 This script automates sending a birthday wish to someone via the **WhatsApp Desktop App** on Windows, using **PyAutoGUI** for automation and **Task Scheduler** to run the script automatically at 12 am.
 
----
 
 ## ✅ Prerequisites
 
@@ -33,7 +32,6 @@ This script automates sending a birthday wish to someone via the **WhatsApp Desk
 - Basic understanding of Task Scheduler on Windows.
 - A comfortable sleep schedule
 
----
 
 ## 📝 Requirements
 
@@ -43,7 +41,6 @@ Ensure you have Python installed on your system. The script uses the following l
 - **time** (for time manipulation and delays)
 
 
----
 
 ## 🛠️ Setup and Installation
 
@@ -88,7 +85,6 @@ Run the script manually to test if it works:
    python adb_script.py
    ```
 
----
 
 ## 🕒 Schedule It with Task Scheduler
 
@@ -144,7 +140,6 @@ Run the script manually to test if it works:
 3. Sends the birthday message to the contact.
 4. Allows you to sleep peacefully while the task is done automatically.
 
----
 
 ## 🛠️ Troubleshooting
 
@@ -154,7 +149,6 @@ If the script doesn't run as expected, it could possibly be due to:
 2. Make sure your screen resolution matches or adjust BASE_WIDTH and BASE_HEIGHT in the script.
 3. Ensure WhatsApp Desktop is properly installed and linked to your account.
 
----
 
 ## 🧑‍💻 Contributing
 Feel free to fork this repository and submit pull requests for:
