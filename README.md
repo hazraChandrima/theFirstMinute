@@ -83,8 +83,8 @@ Ensure you have Python installed on your system. The script uses the following l
 
 Run the script manually to test if it works:
    
-   ```bash💡📜
-   python adb_script.py
+   ```bash
+   python script.py
    ```
 
 
@@ -116,7 +116,7 @@ Run the script manually to test if it works:
 
    - **Add arguments:**  
      ```  
-     C:\[path to theFirstMinute]\desktop_script.py  
+     C:\[path to theFirstMinute]\script.py  
      ```  
 
    - **Start in:**  
