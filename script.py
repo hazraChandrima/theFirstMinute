@@ -1,6 +1,3 @@
-# To automatically text those stupid birthday wishes to someone in WhatsApp @ 12 am, while you can sleep peacefully.
-# We all know it's a pain in the butt to stay awake just for that, especially for someone you don't really care about.
-
 # This is meant for the desktop version of WhatsApp for Windows only.
 import time
 import pyautogui
@@ -24,7 +21,7 @@ def scale_xy(x,y):
 
 def send_message():
 
-    # Opens WhatsApp (only for Windows systems)
+    # Opens WhatsApp
     pyautogui.hotkey('win', 's')
     time.sleep(1)
     pyautogui.typewrite('WhatsApp')
@@ -48,10 +45,10 @@ def send_message():
     pyautogui.typewrite(MESSAGE)
     time.sleep(1)
 
-    pyautogui.press('enter') # finally, sends the message
+    pyautogui.press('enter') # sends the message
     time.sleep(1)
 
-    pyautogui.hotkey('alt', 'f4') # closes WhatsApp
+    pyautogui.hotkey('alt', 'f4') # finally, closes WhatsApp
 
 
 if __name__ == "__main__":
