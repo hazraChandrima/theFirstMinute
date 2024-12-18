@@ -130,7 +130,6 @@ Run the script manually to test if it works:
    - Run the task manually in **Task Scheduler** to confirm it works. 
       > Note: Please don't test the script with the original birthday wish itself! gawd! 
    - The script will now run automatically at 12:00 AM on the day before the birthday.
-   Copy code
 
 
 ---
