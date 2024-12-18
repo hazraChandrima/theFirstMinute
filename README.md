@@ -1,7 +1,7 @@
 # theFirstMinute
 
 So that you don't have to stay up till the last minute....<br/>
-...*the day before*
+...*a day before*
 
 saves you from those stupid 12 am birthday wishes on WhatsApp, while you can sleep in peace.
 We all know it's a pain in the butt to stay awake just for that, especially for someone you don't really care about...🥱
