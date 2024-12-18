@@ -10,14 +10,16 @@ We all know it's a pain in the butt to stay awake just for that, especially for 
 
 1. [What It Does](#-what-it-does)  
 2. [Requirements](#-requirements)
-3. [Prerequisites](#prerequisites) 
-4. [Setup and Installation](#-setup-and-installation)
-5. [Test the Script](#-test-the-script)
+3. [Prerequisites](#-prerequisites) 
+4. [Setup and Installation](#%EF%B8%8F-setup-and-installation)
+5. [Test the Script](#%EF%B8%8F-test-the-script)
 6. [Schedule It with Task Scheduler](#-schedule-it-with-task-scheduler)
 7. [How It Works](#-how-it-works)  
-8. [Troubleshooting](#-troubleshooting)  
-9. [License](#-license)  
+8. [Troubleshooting](#%EF%B8%8F-troubleshooting)  
+9. [Contribute](#-contribute)  
 
+
+<br/>
 
 ## ✨ What it does
 
@@ -40,6 +42,7 @@ Ensure you have Python installed on your system. The script uses the following l
 - **pyautogui** (for desktop automation)
 - **time** (for time manipulation and delays)
 
+---
 
 
 ## 🛠️ Setup and Installation
@@ -66,7 +69,7 @@ Ensure you have Python installed on your system. The script uses the following l
    pip install -r requirements.txt
    ```
    
-5. Adjust Script Configuration
+5. Adjust Script Configuration:
 
    Edit the script file `/script.py` to configure your contact and message:
    ```python
@@ -75,7 +78,7 @@ Ensure you have Python installed on your system. The script uses the following l
    ```
    > **Note: Ensure the contact name matches exactly how it appears in your WhatsApp Desktop.**
 
----
+<br/>
 
 ## ⚙️ Test the Script
 
@@ -88,7 +91,7 @@ Run the script manually to test if it works:
 
 ## 🕒 Schedule It with Task Scheduler
 
-## Steps:
+### Steps:
 
 1. **Open Task Scheduler**  
    - Press `Win + S` and search for **Task Scheduler**.
@@ -109,17 +112,17 @@ Run the script manually to test if it works:
 
    - **Program/script:**  
      ```  
-     C:\path\to\venv\Scripts\python.exe  
+     C:\[path to venv]\Scripts\python.exe  
      ```  
 
    - **Add arguments:**  
      ```  
-     C:\path\to\theFirstMinute\desktop_script.py  
+     C:\[path to theFirstMinute]\desktop_script.py  
      ```  
 
    - **Start in:**  
      ```  
-     C:\path\to\theFirstMinute  
+     C:\[path to theFirstMinute]
      ```  
 
 
@@ -150,7 +153,7 @@ If the script doesn't run as expected, it could possibly be due to:
 3. Ensure WhatsApp Desktop is properly installed and linked to your account.
 
 
-## 🧑‍💻 Contributing
+## 🧑‍💻 Contribute
 Feel free to fork this repository and submit pull requests for:
 
 - Adding features like multiple contacts, reminders, or more automation.
