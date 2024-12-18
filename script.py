@@ -1,10 +1,11 @@
-# Script to automatically open WhatsApp for those stupid birthday wishes to someone, we all know it's a pain in the butt to stay awake, be it your bestie's bday or anyone you don't care about
-# This script can also be modified to text anything to anyone, like sending hundreds of wholesome good morning GIFs to friends and family
-# This is meant for the desktop version of WhatsApp(Windows only). For the web browser version, use web_script.py
-import pyautogui
-import time
+# To automatically text those stupid birthday wishes to someone in WhatsApp @ 12 am, while you can sleep peacefully.
+# We all know it's a pain in the butt to stay awake just for that, especially for someone you don't really care about.
 
-# Adjust accordingly
+# This is meant for the desktop version of WhatsApp for Windows only.
+import time
+import pyautogui
+
+# Adjust accordingly, can also be modified for texting anything else
 CONTACT_NAME = "Tuli"
 MESSAGE = f"Wish you a very Happy Birthday dear {CONTACT_NAME}!!"
 
@@ -12,7 +13,8 @@ MESSAGE = f"Wish you a very Happy Birthday dear {CONTACT_NAME}!!"
 BASE_HEIGHT=1080
 BASE_WIDTH=1920
 
-# Scales the coordinates according to screen size of your device
+# scales the coordinates according to screen size of your device
+# you don't need to adjust any coordinates, the calculations take care of it
 def scale_xy(x,y):
     current_width, current_height = pyautogui.size()
     scaled_x = int(x * (current_width / BASE_WIDTH))
@@ -29,18 +31,16 @@ def send_message():
     pyautogui.press('enter')
     time.sleep(2)
 
-    # Searching for the contact, then opening it and typing the message, it's that fucking easy!
-    # You don't need to adjust any coordinates, the calculations take care of it
     searchbar_x, searchbar_y = scale_xy(150, 120) # coordinates for search bar
-    contact_x, contact_y = scale_xy(200, 250)  # coordinates for first topmost name that appears after searching
+    contact_x, contact_y = scale_xy(200, 250)  # coordinates for first topmost contact that appears after searching
 
-    # clicks on search bar to search for contact
+    # clicks on search bar to search for the contact
     pyautogui.click(x=searchbar_x, y=searchbar_y)
     time.sleep(1)
     pyautogui.typewrite(CONTACT_NAME) # searches for contact name
     time.sleep(2)
 
-    # clicks on first search result after searching
+    # clicks on first search result
     pyautogui.click(x=contact_x, y=contact_y)
     time.sleep(2)
 
@@ -49,9 +49,13 @@ def send_message():
     time.sleep(1)
 
     pyautogui.press('enter') # finally, sends the message
+    time.sleep(1)
+
+    pyautogui.hotkey('alt', 'f4') # closes WhatsApp
 
 
-send_message()
+if __name__ == "__main__":
+    send_message()
 
 
 
