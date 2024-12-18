@@ -9,13 +9,14 @@ We all know it's a pain in the butt to stay awake just for that, especially for 
 ## 📜 Contents  
 
 1. [What It Does](#-what-it-does)  
-2. [Prerequisites](#prerequisites) 
-3. [Setup and Installation](#-setup-and-installation)
-4. [Test the Script](#-test-the-script)
-5. [Schedule It with Task Scheduler](#-schedule-it-with-task-scheduler)
-6. [How It Works](#-how-it-works)  
-7. [Troubleshooting](#-troubleshooting)  
-8. [License](#-license)  
+2. [Requirements](#-requirements)
+3. [Prerequisites](#prerequisites) 
+4. [Setup and Installation](#-setup-and-installation)
+5. [Test the Script](#-test-the-script)
+6. [Schedule It with Task Scheduler](#-schedule-it-with-task-scheduler)
+7. [How It Works](#-how-it-works)  
+8. [Troubleshooting](#-troubleshooting)  
+9. [License](#-license)  
 
 
 ## ✨ What it does
@@ -31,6 +32,16 @@ This script automates sending a birthday wish to someone via the **WhatsApp Desk
 - WhatsApp Desktop App installed on your Windows machine.
 - Basic understanding of Task Scheduler on Windows.
 - A comfortable sleep schedule
+
+---
+
+## 📝 Requirements
+
+### Python Dependencies
+Ensure you have Python installed on your system. The script uses the following libraries:
+- **pyautogui** (for desktop automation)
+- **time** (for time manipulation and delays)
+
 
 ---
 
@@ -143,3 +154,10 @@ If the script doesn't run as expected, it could possibly be due to:
 2. Make sure your screen resolution matches or adjust BASE_WIDTH and BASE_HEIGHT in the script.
 3. Ensure WhatsApp Desktop is properly installed and linked to your account.
 
+---
+
+## 🧑‍💻 Contributing
+Feel free to fork this repository and submit pull requests for:
+
+- Adding features like multiple contacts, reminders, or more automation.
+- Improving the accuracy of automation.
