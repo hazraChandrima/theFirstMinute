@@ -21,7 +21,6 @@ def scale_xy(x,y):
 
 def send_message():
 
-    # Opens WhatsApp
     pyautogui.hotkey('win', 's')
     time.sleep(1)
     pyautogui.typewrite('WhatsApp')
@@ -31,24 +30,20 @@ def send_message():
     searchbar_x, searchbar_y = scale_xy(150, 120) # coordinates for search bar
     contact_x, contact_y = scale_xy(200, 250)  # coordinates for first topmost contact that appears after searching
 
-    # clicks on search bar to search for the contact
     pyautogui.click(x=searchbar_x, y=searchbar_y)
     time.sleep(1)
-    pyautogui.typewrite(CONTACT_NAME) # searches for contact name
+    pyautogui.typewrite(CONTACT_NAME) 
     time.sleep(2)
 
-    # clicks on first search result
     pyautogui.click(x=contact_x, y=contact_y)
     time.sleep(2)
-
-    # writes the message in text box
     pyautogui.typewrite(MESSAGE)
     time.sleep(1)
 
-    pyautogui.press('enter') # sends the message
+    pyautogui.press('enter') 
     time.sleep(1)
 
-    pyautogui.hotkey('alt', 'f4') # finally, closes WhatsApp
+    pyautogui.hotkey('alt', 'f4') 
 
 
 if __name__ == "__main__":
