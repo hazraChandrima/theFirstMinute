@@ -4,7 +4,8 @@ import pyautogui
 
 # Adjust accordingly, can also be modified for texting anything else
 CONTACT_NAME = "Tuli"
-MESSAGE = f"Wish you a very Happy Birthday dear {CONTACT_NAME}!!"
+MESSAGE = f"Wishing you a very happy birthday, dear {CONTACT_NAME}!!"
+MESSAGE += "   BHONDU  :)"
 
 # used as reference for calculation of screen coordinates for different screen sizes
 BASE_HEIGHT=1080
